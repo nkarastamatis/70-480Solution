@@ -17,7 +17,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
-            args.setPromise(WinJS.UI.processAll());
+            //args.setPromise(WinJS.UI.processAll());
         }
     };
 
@@ -35,9 +35,11 @@
     }
 
     window.navigate('/pages/home/home.html');
+    //window.navigate('/lessons/selectors/selectors.html');
 
     app.start();
 })();
+
 
 //function get_information(link, callback) {
 //    var xhr = new XMLHttpRequest();

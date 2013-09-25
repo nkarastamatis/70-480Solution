@@ -14,17 +14,17 @@
         ready: function (e, o) {
             element = e;
             options = o;
-            demosListView = q("#demosListView", element).winControl;
+            demosListView = new Array("Lesson 1", "Lesson 2", "Lesson 3"); //q("#demosListView", element).winControl;
             this.bindList();
             this.layoutList();
             this.applySettings();
-            WinJS.Namespace.define("codeSHOW.Pages.Home", {
-                applySettings: this.applySettings, //allow the settings pane to call this to change the tile color
-                bindList: this.bindList,
-                setCommandVisibility: this.setCommandVisibility
-            });
-            Windows.ApplicationModel.Search.SearchPane.getForCurrentView().showOnKeyboardInput = true;
-            adTimer = setInterval(this._refreshAd, AD_REFRESH_RATE * 1000);
+            //WinJS.Namespace.define("codeSHOW.Pages.Home", {
+            //    applySettings: this.applySettings, //allow the settings pane to call this to change the tile color
+            //    bindList: this.bindList,
+            //    setCommandVisibility: this.setCommandVisibility
+            //});
+            //Windows.ApplicationModel.Search.SearchPane.getForCurrentView().showOnKeyboardInput = true;
+            //adTimer = setInterval(this._refreshAd, AD_REFRESH_RATE * 1000);
 
         },
         _refreshAd: function () {
@@ -48,30 +48,21 @@
         },
         bindList: function () {
             var that = this;
-            var demosList = app.demosList;
+            //var demosList = app.demosList;
             var o = options || {};
-            demosList = demosList.createFiltered(function (i) {
-                var containsOptions = { behavior: "contains", caseSensitive: "false" };
-                return (!app.paid || i.key != "ad")
-                    && (!o.queryText
-                        || (i.key && i.key.split(" ").contains(o.queryText, containsOptions)
-                        || i.name && (i.name.contains(o.queryText, { caseSensitive: false }) || i.name.split(" ").contains(o.queryText, containsOptions))
-                        || i.keywords && i.keywords.split(" ").contains(o.queryText, containsOptions)
-                        || i.description && (i.description.contains(o.queryText, { caseSensitive: false }) || i.description.split(" ").contains(o.queryText, containsOptions))));
-            });
 
-            demosListView.itemDataSource = demosList.dataSource;
-            demosListView.loadingBehavior = "incremental";
-            demosListView.selectionMode = "single";
-            demosListView.oniteminvoked = function (e) {
-                e.detail.itemPromise.then(function (x) {
-                    if (x.data.key != "ad") { //'ad' is the embedded advertisement and should not navigate
-                        var location = format("/demos/{0}/{0}.html", x.data.key);
-                        Windows.UI.ViewManagement.ApplicationView.tryUnsnap();
-                        WinJS.Navigation.navigate(location, x.data);
-                    }
-                });
-            };
+            //demosListView.itemDataSource = demosList.dataSource;
+            //demosListView.loadingBehavior = "incremental";
+            //demosListView.selectionMode = "single";
+            //demosListView.oniteminvoked = function (e) {
+            //    e.detail.itemPromise.then(function (x) {
+            //        if (x.data.key != "ad") { //'ad' is the embedded advertisement and should not navigate
+            //            var location = format("/demos/{0}/{0}.html", x.data.key);
+            //            Windows.UI.ViewManagement.ApplicationView.tryUnsnap();
+            //            WinJS.Navigation.navigate(location, x.data);
+            //        }
+            //    });
+            //};
 
             //TODO: look at why this causes weird behavior. Ad near beginning of listview doesn't load
             demosListView.onloadingstatechanged = function () {
@@ -108,11 +99,11 @@
 
             demosListView.onselectionchanged = that.setCommandVisibility;
 
-            Ocho.AppBar.set({
-                buttons: [{ id: "seeTheCode", label: "See the Code", section: "selection", icon: "page2", click: seeTheCodeClick, hidden: true }],
-                addClass: "win-ui-dark"
-            });
-            that.setCommandVisibility();
+            //Ocho.AppBar.set({
+            //    buttons: [{ id: "seeTheCode", label: "See the Code", section: "selection", icon: "page2", click: seeTheCodeClick, hidden: true }],
+            //    addClass: "win-ui-dark"
+            //});
+            //that.setCommandVisibility();
 
             function seeTheCodeClick() {
                 //get the selected item and pass the demo name in to the navigate function below
@@ -126,18 +117,18 @@
 
         layoutList: function () {
             //set the ListView item template to a function so that it can switch based on view state
-            demosListView.itemTemplate = this.selectItemTemplate;
+            //demosListView.itemTemplate = this.selectItemTemplate;
 
             //use items that look good in a long, tall list layout for snapped view
-            if (Windows.UI.ViewManagement.ApplicationView.value == Windows.UI.ViewManagement.ApplicationViewState.snapped) {
-                demosListView.layout = new WinJS.UI.ListLayout();
-            }
+            //if (Windows.UI.ViewManagement.ApplicationView.value == Windows.UI.ViewManagement.ApplicationViewState.snapped) {
+            //    demosListView.layout = new WinJS.UI.ListLayout();
+            //}
 
-                //use items that look good as tiles for the full/fill/portrait views
-            else {
-                demosListView.layout = new WinJS.UI.GridLayout();
-                demosListView.layout.groupInfo = function () { return { enableCellSpanning: true, cellWidth: 250, cellHeight: 125 }; };
-            }
+            //    //use items that look good as tiles for the full/fill/portrait views
+            //else {
+            //    demosListView.layout = new WinJS.UI.GridLayout();
+            //    demosListView.layout.groupInfo = function () { return { enableCellSpanning: true, cellWidth: 250, cellHeight: 125 }; };
+            //}
         },
         selectItemTemplate: function (itemPromise) {
             return itemPromise.then(function (item) {
@@ -167,11 +158,11 @@
             }
         },
         applySettings: function () {
-            document.styleSheets.toArray()
-                .first(function (ss) { return ss.href && ss.href.endsWith("home.css"); })
-                .rules.toArray()
-                .first(function (r) { return r.selectorText == ".homepage #demosListView .win-item"; })
-                .style.backgroundColor = appdata.roamingSettings.values["tileColor"];
+            //document.styleSheets.toArray()
+            //    .first(function (ss) { return ss.href && ss.href.endsWith("home.css"); })
+            //    .rules.toArray()
+            //    .first(function (r) { return r.selectorText == ".homepage #demosListView .win-item"; })
+            //    .style.backgroundColor = appdata.roamingSettings.values["tileColor"];
         }
 
 

@@ -1,0 +1,27 @@
+﻿.lesson {
+    display: -ms-grid;
+    -ms-grid-columns: 120px 1fr;
+    background-color:red;
+    margin-top:120px;
+    height: 100%;
+    -ms-layout-grid-line: auto;
+}
+    .lesson section[role=navigation] {
+        background-color:green;
+        text-align:center;
+        -ms-grid-column: 1;
+        display:-ms-flexbox;
+        -ms-flex-direction:column;
+        -ms-flex-align:center;
+    }
+    .lesson section[role=main] {
+        -ms-grid-column: 2;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .lesson section[role=main] div{
+        visibility: hidden;
+        position:absolute;
+        top:120px;
+    }

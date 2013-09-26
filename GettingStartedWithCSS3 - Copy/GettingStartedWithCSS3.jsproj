@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>5eed99f5-242d-4e30-b312-245f1fee8c5d</ProjectGuid>
+    <ProjectGuid>152f64bf-b84f-4c00-9b18-92d448e4947d</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
     <VisualStudioVersion>11.0</VisualStudioVersion>
@@ -53,32 +53,28 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="css\default.css" />
-    <Content Include="css\lesson.css" />
-    <Content Include="demos\selectors\selectors.css" />
-    <Content Include="demos\selectors\selectors.html" />
-    <Content Include="demos\selectors\selectors.js" />
+    <Content Include="default.html" />
+    <Content Include="images\headerlogo.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="js\default.js" />
-    <Content Include="js\lesson.js" />
+    <Content Include="css\default.css" />
     <Content Include="js\navigator.js" />
     <Content Include="js\ocho.js" />
-    <Content Include="lessons\lesson1\lesson1.css" />
-    <Content Include="lessons\lesson1\lesson1.html" />
-    <Content Include="lessons\lesson1\lesson1.js" />
-    <Content Include="lessons\lesson2\lesson2.css" />
-    <Content Include="lessons\lesson2\lesson2.html" />
-    <Content Include="lessons\lesson2\lesson2.js" />
-    <Content Include="lessons\lesson3\lesson3.css" />
-    <Content Include="lessons\lesson3\lesson3.html" />
-    <Content Include="lessons\lesson3\lesson3.js" />
+    <Content Include="lessons\grid\grid.css" />
+    <Content Include="lessons\grid\grid.html" />
+    <Content Include="lessons\grid\grid.js" />
+    <Content Include="lessons\selectors\selectors.css" />
+    <Content Include="lessons\selectors\selectors.html" />
+    <Content Include="lessons\selectors\selectors.js" />
+    <Content Include="pages\home2\home.css" />
+    <Content Include="pages\home2\home.html" />
+    <Content Include="pages\home2\home.js" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
-    <Content Include="default.html" />
     <None Include="GettingStartedWithCSS3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

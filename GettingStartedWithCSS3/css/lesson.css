@@ -1,27 +1,46 @@
 ﻿.lesson {
+
     display: -ms-grid;
     -ms-grid-columns: 120px 1fr;
-    background-color:red;
     margin-top:120px;
     height: 100%;
     -ms-layout-grid-line: auto;
 }
     .lesson section[role=navigation] {
-        background-color:green;
+        background-color: rgba(79, 171, 237, .2);
+
         text-align:center;
         -ms-grid-column: 1;
         display:-ms-flexbox;
         -ms-flex-direction:column;
         -ms-flex-align:center;
     }
+        .lesson section[role=navigation] * {
+            margin-top: 8px;
+            max-width:100%;
+            color:yellow; 
+            
+        }
     .lesson section[role=main] {
         -ms-grid-column: 2;
+        height:100%;
         margin-left: 120px;
         margin-right: 120px;
     }
 
-    .lesson section[role=main] div{
+    .lesson section[role=main] div.slide{
         visibility: hidden;
         position:absolute;
         top:120px;
     }
+        .lesson section[role=main] div.slide div {
+            display:list-item;
+            font-size:xx-large;
+            margin:5px;
+        }
+
+            .lesson section[role=main] div.slide div div {
+                margin-left:26px;
+                font-size:x-large;
+
+            }

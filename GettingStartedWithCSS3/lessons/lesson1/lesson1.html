@@ -19,23 +19,42 @@
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to lesson1</span>
+                <span class="pagetitle">Introducing CSS3</span>
             </h1>
         </header>
         <div class="lesson">
         <section class="navBar" role="navigation">
-            <h3 id="0">Content 1</h3>
-            <h3 id="1">Content 2</h3>
-            <h3 id="2">Content 3</h3>
+            <h3 id="0">History</h3>
+            <h3 id="1">Defining Styles</h3>
+            <h3 id="2">Applying Styles</h3>
+            <h3 id="3">3 Ways to Create a Style</h3>
         </section>
         <section aria-label="Main content" role="main">
-            <p>Content 1 goes here.</p>
             <div class="slide">
-                <p>Content goes here.</p>
+                <div>The Problem: How can I generalize presentation when I have multiple pages with the same look and feel?</div>
+                <div>The Solution: Cascading Style Sheets (CSS)
+                    <div>Roots in Standardized Generalized Markup Language (SGML)</div>
+                    <div>Separates structure from presentation</div>
+                    <div>Same content presented differently for printing, browsing, snapping, rotating, ...</div>
+                </div>
+                <div>CSS Level 1 recommendations released in December 1996</div>
+                <div>CSS Level 2 recommendations released in May 1998</div>
+                <div>CSS 2.1 - June 2011 (revised publication)</div>
+                <div>CSS3 separated into 50+ modules
+                    <a href="http://www.css3.info/modules/">CSS3.info</a>
+                </div>
+            </div>
+            <div class="slide">
+                <pre><code id="styleRule">
+selector {
+    property: value;
+    property: value;
+}
+                     </code></pre>
             </div>
             <div class="slide">
                 <p>Content goes here.</p>
-                <p>Content2 goes here.</p>
+                <p>Content3 goes here.</p>
             </div>
             <div class="slide">
                 <p>Content goes here.</p>

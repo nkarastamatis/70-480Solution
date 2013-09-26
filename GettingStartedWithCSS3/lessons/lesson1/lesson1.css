@@ -3,6 +3,10 @@
     margin-right: 120px;
 }
 
+.lesson1 #styleRule {
+    font-size:xx-large;
+}
+
 @media screen and (-ms-view-state: snapped) {
     .lesson1 section[role=main] {
         margin-left: 20px;

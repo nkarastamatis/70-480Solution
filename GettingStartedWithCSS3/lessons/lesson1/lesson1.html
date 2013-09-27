@@ -9,6 +9,7 @@
     <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
     <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
 
+    <link href="../../css/default.css" rel="stylesheet" />
     <link href="../../css/lesson.css" rel="stylesheet" />
     <link href="lesson1.css" rel="stylesheet" />
     <script src="lesson1.js"></script>
@@ -22,14 +23,15 @@
                 <span class="pagetitle">Introducing CSS3</span>
             </h1>
         </header>
-        <div class="lesson">
+        <section aria-label="Main content" role="main" class="lesson">
         <section class="navBar" role="navigation">
             <h3 id="0">History</h3>
             <h3 id="1">Defining Styles</h3>
             <h3 id="2">Applying Styles</h3>
             <h3 id="3">3 Ways to Create a Style</h3>
         </section>
-        <section aria-label="Main content" role="main">
+        <section aria-label="Main content" role="document">
+            <div id="slideDisplay"></div>
             <div class="slide">
                 <div>The Problem: How can I generalize presentation when I have multiple pages with the same look and feel?</div>
                 <div>The Solution: Cascading Style Sheets (CSS)
@@ -45,23 +47,85 @@
                 </div>
             </div>
             <div class="slide">
-                <pre><code id="styleRule">
-selector {
-    property: value;
-    property: value;
+                <pre id="styleRule">
+<span class="selector">selector</span> { 
+    <span class="property">property</span>: <span class="value">value</span>;  <span class="comment">/* comment */</span>
+    <span class="property">property</span>: <span class="value">value</span>;
 }
-                     </code></pre>
+                </pre>
             </div>
             <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content3 goes here.</p>
+                <div class="swiper">
+                    <div>
+                        <h2>Inline style</h2>
+                        <pre class="code">
+&lt;html&gt;
+&lt;head&gt;
+
+&lt;/head&gt;
+&lt;body&gt;
+   &lt;p style="background: blue; color: white;"&gt;A new background and font color with inline CSS&lt;/p&gt;
+
+   &lt;p style="background: url(http://www.tizag.com/cssT/yellow_rock.gif);"&gt;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;           </pre>                          
+                    </div>
+                    <div>
+                        <h2>Embedded style</h2>
+                        <pre class="code">
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style type="text/css"&gt;
+        h1 {color:red;}
+        p {color:blue;}
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;  
+&lt;h1&gt;A heading&lt;/h1&gt;
+&lt;p&gt;A paragraph.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                        </pre>
+                    </div>
+                    <div>
+                        <h2>External style sheet</h2>
+                <pre class="code">
+ul.menubar {
+  background: white;
+  list-style: none;
+  padding: 0 10px;
+}
+
+p {
+	color: black;
+	display: block;
+	padding: 10px 14px;
+	text-decoration: none;
+}
+
+&:hover { 
+	background: #29a7f5; 
+	color: white; 
+}
+</pre><hr /><pre class="code">
+&lt;html&gt;
+&lt;head&gt;
+	&lt;link href="/css/demo.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+                </pre>
+                    </div>
+                </div>
             </div>
             <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content3 goes here.</p>
+
             </div>
         </section>
-        </div>
+        </section>
     </div>
 </body>
 </html>

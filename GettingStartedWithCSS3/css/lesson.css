@@ -1,46 +1,79 @@
 ﻿.lesson {
-
     display: -ms-grid;
     -ms-grid-columns: 120px 1fr;
-    margin-top:120px;
-    height: 100%;
-    -ms-layout-grid-line: auto;
+    -ms-grid-rows: 1fr;
+    height:auto;
 }
     .lesson section[role=navigation] {
         background-color: rgba(79, 171, 237, .2);
-
+        height:100%;
+        width:100%;
         text-align:center;
         -ms-grid-column: 1;
         display:-ms-flexbox;
         -ms-flex-direction:column;
         -ms-flex-align:center;
+        -ms-flex-pack:distribute;
     }
         .lesson section[role=navigation] * {
-            margin-top: 8px;
+            margin: 5px;
             max-width:100%;
             color:yellow; 
             
         }
-    .lesson section[role=main] {
+    .lesson section[role=document] {
         -ms-grid-column: 2;
-        height:100%;
-        margin-left: 120px;
-        margin-right: 120px;
+        height:auto;
+        width:auto;
     }
 
-    .lesson section[role=main] div.slide{
+    .lesson section[role=document] div.slide {
         visibility: hidden;
-        position:absolute;
-        top:120px;
+        /*position:absolute;
+        width:100%;
+        height:100%;
+        margin-right:200px;
+        margin-bottom:128px;*/
     }
-        .lesson section[role=main] div.slide div {
+    .lesson section[role=document] div#slideDisplay {
+        width:100%;
+        height:100%;
+    }
+        .lesson section[role=document] div#slideDisplay > div:not(.swiper) {
             display:list-item;
             font-size:xx-large;
             margin:5px;
+            margin-left:35px;
         }
 
-            .lesson section[role=main] div.slide div div {
+            .lesson section[role=document] div#slideDisplay div:not(.swiper) div {
                 margin-left:26px;
                 font-size:x-large;
-
             }
+
+
+    /*Swipers*/
+    .lesson section[role=document] div#slideDisplay .swiper {
+        width:auto; /*takes into account the margin set below, fits the rest*/
+        display: -ms-flexbox;
+        -ms-scroll-snap-x: mandatory snapInterval(0%, 85%);
+        overflow-x: auto;
+        height:100%;
+        
+    }
+
+    .lesson section[role=document] div#slideDisplay .swiper > * {
+        box-sizing: border-box;
+        border:groove;
+        border-color:whitesmoke;
+        width: 85%;
+        padding-right:80px;
+        padding-left:10px;
+        margin-bottom:16px; /* room for scrollbar */
+        -ms-flex-wrap:wrap;
+        overflow-y:auto;
+    }
+
+        .lesson section[role=document] div#slideDisplay .swiper > * > h2 {
+            margin-bottom: 20px;
+        }

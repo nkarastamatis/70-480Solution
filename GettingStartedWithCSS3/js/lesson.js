@@ -1,10 +1,12 @@
 ﻿var slides;
 var currentSlide;
+var slideDisplay;
 
  function initLesson (element){
     var elem = element.querySelector('.navBar');
     elem.addEventListener('click', showSlide);
     slides = element.getElementsByClassName('slide');
+    slideDisplay = document.getElementById('slideDisplay');
 }
 
     function showSlide(e) {
@@ -17,6 +19,8 @@ var currentSlide;
 
             currentSlide = slides[e.target.id];
             currentSlide.style.visibility = 'visible';
+
+            slideDisplay.innerHTML = currentSlide.innerHTML;
         }
     }
 

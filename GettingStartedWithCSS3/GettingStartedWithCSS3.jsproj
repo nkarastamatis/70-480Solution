@@ -58,6 +58,8 @@
     <Content Include="demos\selectors\selectors.css" />
     <Content Include="demos\selectors\selectors.html" />
     <Content Include="demos\selectors\selectors.js" />
+    <Content Include="images\headerlogo.png" />
+    <Content Include="images\inlinestyle.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
@@ -79,6 +81,7 @@
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="textfile.txt" />
     <None Include="GettingStartedWithCSS3_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

@@ -1,10 +1,31 @@
-﻿.lesson1 section[role=main] {
-    margin-left: 120px;
-    margin-right: 120px;
+﻿
+.lesson1 section[role=main] {
+    /*margin-left: 120px;
+    margin-right: 120px;*/
 }
 
 .lesson1 #styleRule {
     font-size:xx-large;
+}
+ 
+.lesson1 .code {
+    padding-left:20px;
+    font-size:large;
+}
+
+.lesson1 .selector {
+    color: limegreen;
+}
+
+.lesson1 .property {
+    color: yellow;
+}
+
+.lesson1 .value {
+    color:aqua;
+}
+.lesson1 .comment {
+    color: lightgreen;
 }
 
 @media screen and (-ms-view-state: snapped) {

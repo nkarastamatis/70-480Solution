@@ -1,8 +1,8 @@
 ﻿.selectors #grid {
-    height: 600px;
+    height:100%;
     display: -ms-grid;
-    -ms-grid-columns: 1fr 1fr;
-    -ms-grid-rows: 160px 1fr;
+    -ms-grid-columns: 120px 1fr 33%;
+    -ms-grid-rows: 160px 1fr 0px;
 }
 
 .selectors #grid > div.section {
@@ -15,15 +15,42 @@
     position: relative;
     font-size: 80px;
     font-weight: bold;
-    color: rgba(0,0,0,0.05);
+    color: rgba(255, 255, 255, 0.05);
     top: -8px;
     left: 14px;
     z-index: -100;
 }
 
+.selectors #grid #labelSelectors {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    transform:rotate(-90deg);
+    transform-origin:0 0;
+    
+}
+
+.selectors #grid #selectors {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    display:-ms-flexbox;
+    -ms-flex-flow:column;
+    -ms-flex-pack:justify;
+    border:none;
+}
+    .selectors #grid #selectors * {
+        font-size:large;
+        font-weight:bold;
+    }
+
+.selectors #grid #labelCSS {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+}
+
 .selectors #grid #input {
     -ms-grid-row: 1;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     font-size: 32px;
 }
@@ -34,17 +61,21 @@
 }
 
 .selectors #grid #html {
-    overflow: scroll;
+    height:100%;
 }
+
+    .selectors #grid #html pre {
+        font-size:large;
+    }
 
 .selectors #grid #labelHTML,
 .selectors #grid #html {
     -ms-grid-row: 2;
-    -ms-grid-column: 1;
+    -ms-grid-column: 2;
 }
 
 .selectors #grid #labelRender,
 .selectors #grid #render {
     -ms-grid-row: 2;
-    -ms-grid-column: 2;
+    -ms-grid-column: 3;
 }

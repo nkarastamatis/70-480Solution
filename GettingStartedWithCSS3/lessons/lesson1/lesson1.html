@@ -24,41 +24,41 @@
             </h1>
         </header>
         <section aria-label="Main content" role="main" class="lesson">
-        <section class="navBar" role="navigation">
-            <h3 id="0">History</h3>
-            <h3 id="1">Defining Styles</h3>
-            <h3 id="2">Applying Styles</h3>
-            <h3 id="3">External Sheet</h3>
-        </section>
-        <section aria-label="Main content" role="document">
-            <div id="slideDisplay"></div>
-            <div class="slide">
-                <div>The Problem: How can I generalize presentation when I have multiple pages with the same look and feel?</div>
-                <div>The Solution: Cascading Style Sheets (CSS)
-                    <div>Roots in Standardized Generalized Markup Language (SGML)</div>
-                    <div>Separates structure from presentation</div>
-                    <div>Same content presented differently for printing, browsing, snapping, rotating, ...</div>
+            <section class="navBar" role="navigation">
+                <h3 id="0">History</h3>
+                <h3 id="1">Defining Styles</h3>
+                <h3 id="2">Applying Styles</h3>
+                <h3 id="3">External Sheet</h3>
+            </section>
+            <section aria-label="Main content" role="document">
+                <div id="slideDisplay"></div>
+                <div class="slide">
+                    <div>The Problem: How can I generalize presentation when I have multiple pages with the same look and feel?</div>
+                    <div>The Solution: Cascading Style Sheets (CSS)
+                        <div>Roots in Standardized Generalized Markup Language (SGML)</div>
+                        <div>Separates structure from presentation</div>
+                        <div>Same content presented differently for printing, browsing, snapping, rotating, ...</div>
+                    </div>
+                    <div>CSS Level 1 recommendations released in December 1996</div>
+                    <div>CSS Level 2 recommendations released in May 1998</div>
+                    <div>CSS 2.1 - June 2011 (revised publication)</div>
+                    <div>CSS3 separated into 50+ modules
+                        <a href="http://www.css3.info/modules/">CSS3.info</a>
+                    </div>
                 </div>
-                <div>CSS Level 1 recommendations released in December 1996</div>
-                <div>CSS Level 2 recommendations released in May 1998</div>
-                <div>CSS 2.1 - June 2011 (revised publication)</div>
-                <div>CSS3 separated into 50+ modules
-                    <a href="http://www.css3.info/modules/">CSS3.info</a>
-                </div>
-            </div>
-            <div class="slide">
-                <pre id="styleRule">
+                <div class="slide">
+                    <pre id="styleRule">
 <span class="selector">selector</span> { 
     <span class="property">property</span>: <span class="value">value</span>;  <span class="comment">/* comment */</span>
     <span class="property">property</span>: <span class="value">value</span>;
 }
-                </pre>
-            </div>
-            <div class="slide">
-                <div class="swiper">
-                    <div>
-                        <h2>Inline style</h2>
-                        <pre class="code">
+                    </pre>
+                </div>
+                <div class="slide">
+                    <div class="swiper">
+                        <div>
+                            <h2>Inline style</h2>
+                            <pre class="code">
 &lt;html&gt;
 &lt;head&gt;
 
@@ -68,11 +68,11 @@
 
    &lt;p style="background: url(http://www.tizag.com/cssT/yellow_rock.gif);"&gt;&lt;/p&gt;
 &lt;/body&gt;
-&lt;/html&gt;           </pre>                          
-                    </div>
-                    <div>
-                        <h2>Embedded style</h2>
-                        <pre class="code">
+    &lt;/html&gt;           </pre>                          
+                        </div>
+                        <div>
+                            <h2>Embedded style</h2>
+                            <pre class="code">
 &lt;html&gt;
 &lt;head&gt;
     &lt;style type="text/css"&gt;
@@ -86,11 +86,11 @@
 &lt;p&gt;A paragraph.&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-                        </pre>
-                    </div>
-                    <div>
-                        <h2>External style sheet</h2>
-                <pre class="code">
+                            </pre>
+                        </div>
+                        <div>
+                            <h2>External style sheet</h2>
+                            <pre class="code">
 ul.menubar {
   background: white;
   list-style: none;
@@ -108,7 +108,8 @@ p {
 	background: #29a7f5; 
 	color: white; 
 }
-</pre><hr /><pre class="code">
+                             </pre><hr />
+                             <pre class="code"> 
 &lt;html&gt;
 &lt;head&gt;
 	&lt;link href="/css/demo.css" rel="stylesheet" /&gt;
@@ -117,38 +118,40 @@ p {
 
 &lt;/body&gt;
 &lt;/html&gt;
-                </pre>
+                            </pre>
+                                </div>
                     </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div>Media attribute
-                    <div>&lt;link href="/css/demo.css" rel="stylesheet" media='print'/&gt;</div>
-                    <div>default: all</div>
-                    <div>braille, handheld, tv</div>
-                </div>
-                <div>Specify the character encoding
-                    <div>first line of style sheet</div>
-                    <div>@charset 'UTF-8';</div>
-                    <div>can also be set with HTML</div>
-                </div>
-                <div>Import style sheets
-                    <div>must be at the top </div>
-                    <div>not even a comment can be above (only after @charset)</div>
-                    <div>@import url('/css/menu.css');</div>
-                    <div>@import url('/css/footer.css'); print</div>
-                </div>
-                <div>Import fonts
-                    <div><pre class="code">
+                <div class="slide">
+                    <div>Media attribute
+                        <div>&lt;link href="/css/demo.css" rel="stylesheet" media='print'/&gt;</div>
+                        <div>default: all</div>
+                        <div>braille, handheld, tv</div>
+                    </div>
+                    <div>Specify the character encoding
+                        <div>first line of style sheet</div>
+                        <div>@charset 'UTF-8';</div>
+                        <div>can also be set with HTML</div>
+                    </div>
+                    <div>Import style sheets
+                        <div>must be at the top </div>
+                        <div>not even a comment can be above (only after @charset)</div>
+                        <div>@import url('/css/menu.css');</div>
+                        <div>@import url('/css/footer.css'); print</div>
+                    </div>
+                    <div>Import fonts
+                        <div>
+                        <pre class="code">
 @font-face {
     font-family: myFont;
     src: url('Fancy_Light.ttf'),
          url('Fancy_Light.eot');
 }
-                         </pre></div>
+                         </pre>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
         </section>
     </div>
 </body>

@@ -22,28 +22,30 @@
                 <span class="pagetitle">Welcome to lesson2</span>
             </h1>
         </header>
-        <div class="lesson">
-        <section class="navBar" role="navigation">
-            <h3 id="0">Content 1</h3>
-            <h3 id="1">Content 2</h3>
-            <h3 id="2">Content 3</h3>
-            <h3 data-demopage="../../demos/selectors/selectors.html" id="3">Demo</h3>
+        <section aria-label="Main content" role="main" class="lesson">
+            <section class="navBar" role="navigation">
+                <h3 id="0">Selectors</h3>
+                <h3 data-demopage="../../demos/selectors/selectors.html" id="3">Demo</h3>
+                <h3 id="1">Browser Styles</h3>
+                <h3 id="2">Cascading</h3>
+                <h3 id="3">Review</h3>
+            </section>
+            <section aria-label="Main content" role="document">
+                <div id="slideDisplay"></div>
+                <div class="slide">
+                    <p>Content goes here.</p>
+                </div>
+                <div class="slide">
+                    <p>Content goes here.</p>
+                    <p>Content2 goes here.</p>
+                </div>
+                <div class="slide">
+                    <p>Content goes here.</p>
+                    <p>Content3 goes here.</p>
+                </div>
+                <div class="slide">Blank on purpose</div>
+            </section>
         </section>
-        <section aria-label="Main content" role="main">
-            <div class="slide">
-                <p>Content goes here.</p>
-            </div>
-            <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content2 goes here.</p>
-            </div>
-            <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content3 goes here.</p>
-            </div>
-            <div class="slide">Blank on purpose</div>
-        </section>
-        </div>
     </div>
 </body>
 </html>

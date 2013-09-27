@@ -11,8 +11,10 @@ var slideDisplay;
 
     function showSlide(e) {
         if (e.target.nodeName === 'H3') {
-            if (e.target.getAttribute('data-demopage'))
+            if (e.target.getAttribute('data-demopage')) {
                 showDemo(e);
+                return;
+            }
 
             if (currentSlide)
                 currentSlide.style.visibility = 'hidden';

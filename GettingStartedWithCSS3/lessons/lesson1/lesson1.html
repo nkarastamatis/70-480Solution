@@ -28,7 +28,7 @@
             <h3 id="0">History</h3>
             <h3 id="1">Defining Styles</h3>
             <h3 id="2">Applying Styles</h3>
-            <h3 id="3">3 Ways to Create a Style</h3>
+            <h3 id="3">External Sheet</h3>
         </section>
         <section aria-label="Main content" role="document">
             <div id="slideDisplay"></div>
@@ -122,7 +122,31 @@ p {
                 </div>
             </div>
             <div class="slide">
-
+                <div>Media attribute
+                    <div>&lt;link href="/css/demo.css" rel="stylesheet" media='print'/&gt;</div>
+                    <div>default: all</div>
+                    <div>braille, handheld, tv</div>
+                </div>
+                <div>Specify the character encoding
+                    <div>first line of style sheet</div>
+                    <div>@charset 'UTF-8';</div>
+                    <div>can also be set with HTML</div>
+                </div>
+                <div>Import style sheets
+                    <div>must be at the top </div>
+                    <div>not even a comment can be above (only after @charset)</div>
+                    <div>@import url('/css/menu.css');</div>
+                    <div>@import url('/css/footer.css'); print</div>
+                </div>
+                <div>Import fonts
+                    <div><pre class="code">
+@font-face {
+    font-family: myFont;
+    src: url('Fancy_Light.ttf'),
+         url('Fancy_Light.eot');
+}
+                         </pre></div>
+                </div>
             </div>
         </section>
         </section>

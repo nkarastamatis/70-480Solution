@@ -5,6 +5,11 @@
 }
 
 .lesson1 #styleRule {
+    display:-ms-flexbox;
+    height:100%;
+    width:100%;
+    -ms-flex-align:center;
+    -ms-flex-pack:center;
     font-size:xx-large;
 }
  

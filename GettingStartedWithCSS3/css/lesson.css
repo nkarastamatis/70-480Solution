@@ -7,12 +7,13 @@
     .lesson section[role=navigation] {
         /*background-color: rgba(79, 171, 237, .2);*/
         height:100%;
-        width:100%;
-        
+        width:100%;        
         -ms-grid-column: 1;
         display:-ms-flexbox;
         -ms-flex-direction:column;
         -ms-flex-pack:distribute;
+        
+        
     }
         .lesson section[role=navigation] div {            
             width: 100%;
@@ -20,7 +21,9 @@
             max-width:100%;
             box-sizing:border-box;
             font-size:x-large;
-            color:yellow;
+            border-radius: 10px;
+            background-color:lightblue;
+            color:black;
             -ms-flex-align:center;
             border:solid;
             border-color:transparent;

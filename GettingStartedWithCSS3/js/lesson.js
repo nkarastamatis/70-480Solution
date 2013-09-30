@@ -18,11 +18,15 @@ var slideDisplay;
                 return;
             }
 
-            if (currentNavBarID)
+            if (currentNavBarID) {
                 document.getElementById(currentNavBarID).style.borderColor = 'transparent';
+                document.getElementById(currentNavBarID).style.backgroundColor = 'lightblue';
+                document.getElementById(currentNavBarID).style.color = 'black';
+            }
 
             currentNavBarID = e.target.id;
-            e.target.style.border = 'solid';
+            e.target.style.backgroundColor = 'transparent';
+            e.target.style.color = 'white';
 
             if (currentSlide)
                 currentSlide.style.visibility = 'hidden';

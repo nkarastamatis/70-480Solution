@@ -27,8 +27,11 @@
                 <div id="0">Color</div>
                 <div id="1">Text</div>
                 <div id="2">Box Model</div>
-                <div id="3">Positioning &lt;div&gt; Elements (old)</div>
-                <div id="4">Positioning &lt;div&gt; Elements (new)</div>
+                <div data-demopage="../../demos/boxprops/boxprops.html">Box Properties</div>
+                <div id="3">Positioning (old)</div>
+                <div id="4">Positioning (new)</div>
+                <div data-demopage="../../demos/flexbox/flexbox.html">Flexbox</div>
+                <div data-demopage="../../demos/grid/grid.html">Grid</div>
             </section>
             <section aria-label="Main content" role="document">
                 <div id="slideDisplay"></div>
@@ -71,8 +74,21 @@
                     <div>border-color:</div>
                 </div>
                 <div class="slide">
-                    <p>Content goes here.</p>
-                    <p>Content3 goes here.</p>
+                    <div>position: static | relative | absolute | fixed
+                        <div>used in conjunction with top, right, bottom, left</div>
+                    </div>
+                    <div>static
+                        <div>Normal behavior. The top, right, bottom, and left properties do not apply.</div>
+                    </div>
+                    <div>relative
+                        <div>Lay out all elements as though the element were not positioned, and then adjust the element's position.</div>
+                    </div>
+                    <div>absolute
+                        <div>Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor or to the containing block.</div>
+                    </div>
+                    <div>fixed
+                        <div>Do not leave space for the element. Instead, position it at a specified position relative to the screen's viewport and doesn't move when scrolled. </div>
+                    </div>
                 </div>
                 <div class="slide">
                     <p>Content goes here.</p>

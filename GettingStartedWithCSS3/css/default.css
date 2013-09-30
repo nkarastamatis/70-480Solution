@@ -38,6 +38,29 @@
         width:auto;
     }
 
+/*Swipers*/
+.fragment section[role=main].swiper,
+.swiper {
+    width:auto; /*takes into account the margin set below, fits the rest*/
+    display: -ms-flexbox;
+    -ms-scroll-snap-x: mandatory snapInterval(0%, 80%);
+    overflow-x: auto;
+    margin-left: 120px;
+}
+
+.fragment section[role=main].swiper > *,
+.swiper > * {
+    box-sizing: border-box;
+    width: 80%;
+    padding-right:80px;
+    margin-bottom:16px; /* room for scrollbar */
+}
+
+    .fragment section[role=main].swiper > * > h2,
+    .swiper > * > h2 {
+        margin-bottom: 20px;
+    }
+
 @media screen and (-ms-view-state: snapped) {
     .fragment header[role=banner] {
         -ms-grid-columns: auto 1fr;

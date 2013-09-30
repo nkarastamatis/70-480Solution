@@ -55,6 +55,15 @@
     </AppxManifest>
     <Content Include="css\default.css" />
     <Content Include="css\lesson.css" />
+    <Content Include="demos\boxprops\boxprops.css" />
+    <Content Include="demos\boxprops\boxprops.html" />
+    <Content Include="demos\boxprops\boxprops.js" />
+    <Content Include="demos\flexbox\flexbox.css" />
+    <Content Include="demos\flexbox\flexbox.html" />
+    <Content Include="demos\flexbox\flexbox.js" />
+    <Content Include="demos\grid\grid.css" />
+    <Content Include="demos\grid\grid.html" />
+    <Content Include="demos\grid\grid.js" />
     <Content Include="demos\selectors\selectors.css" />
     <Content Include="demos\selectors\selectors.html" />
     <Content Include="demos\selectors\selectors.js" />

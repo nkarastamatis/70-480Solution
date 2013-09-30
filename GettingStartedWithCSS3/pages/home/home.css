@@ -1,7 +1,7 @@
-﻿.homepage section[role=main] {
+﻿
+.homepage section[role=main] {
     margin-left: 120px;
     margin-right: 120px;
-    background-color:green;
 }
 
 @media screen and (-ms-view-state: snapped) {

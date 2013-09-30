@@ -1,12 +1,11 @@
-﻿
-.lesson1 section[role=main] {
+﻿.lesson1 section[role=main] {
     /*margin-left: 120px;
     margin-right: 120px;*/
 }
 
 .lesson1 #styleRule {
     display:-ms-flexbox;
-    height:100%;
+    height:80%;
     width:100%;
     -ms-flex-align:center;
     -ms-flex-pack:center;

@@ -58,7 +58,6 @@
     <Content Include="demos\selectors\selectors.css" />
     <Content Include="demos\selectors\selectors.html" />
     <Content Include="demos\selectors\selectors.js" />
-    <Content Include="images\headerlogo.png" />
     <Content Include="images\inlinestyle.jpg" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
@@ -77,6 +76,8 @@
     <Content Include="lessons\lesson3\lesson3.css" />
     <Content Include="lessons\lesson3\lesson3.html" />
     <Content Include="lessons\lesson3\lesson3.js" />
+    <Content Include="pages\browser test\browser.html" />
+    <Content Include="pages\browser test\userstylesheet.css" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />

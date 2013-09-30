@@ -1,7 +1,7 @@
 ﻿.selectors #grid {
     height:100%;
     display: -ms-grid;
-    -ms-grid-columns: 120px 1fr 33%;
+    -ms-grid-columns: 130px 1fr 33%;
     -ms-grid-rows: 160px 1fr 0px;
 }
 
@@ -37,6 +37,7 @@
     -ms-flex-flow:column;
     -ms-flex-pack:justify;
     border:none;
+    color:lightskyblue;
 }
     .selectors #grid #selectors * {
         font-size:large;
@@ -61,7 +62,7 @@
 }
 
 .selectors #grid #html {
-    height:100%;
+    overflow-y:auto;
 }
 
     .selectors #grid #html pre {
@@ -78,4 +79,5 @@
 .selectors #grid #render {
     -ms-grid-row: 2;
     -ms-grid-column: 3;
+    overflow-y:auto;
 }

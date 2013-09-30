@@ -19,29 +19,67 @@
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to lesson3</span>
+                <span class="pagetitle">Working with CSS properties</span>
             </h1>
         </header>
-        <div class="lesson">
-        <section class="navBar" role="navigation">
-            <h3 id="0">Content 1</h3>
-            <h3 id="1">Content 2</h3>
-            <h3 id="2">Content 3</h3>
+        <section aria-label="Main content" role="main" class="lesson">
+            <section class="navBar" role="navigation">
+                <div id="0">Color</div>
+                <div id="1">Text</div>
+                <div id="2">Box Model</div>
+                <div id="3">Positioning &lt;div&gt; Elements (old)</div>
+                <div id="4">Positioning &lt;div&gt; Elements (new)</div>
+            </section>
+            <section aria-label="Main content" role="document">
+                <div id="slideDisplay"></div>
+                <div class="slide">
+                    <div>rgb function
+                        <div>color name</div>
+                        <div>hex value</div>
+                        <div>decimal value (r, g, b)</div>
+                    </div>
+                    <div>rgba function
+                        <div>last value is transparency</div>
+                        <div>value between 0 and 1</div>
+                    </div>
+                    <div>hsl function
+                        <div>hue-saturation-lightness</div>
+                        <div>hsla for transparency</div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>font-family property</div>
+                    <div>font-size property</div>
+                </div>
+                <div class="slide">
+                    <div id="boxModel">
+                        <div class="boxModel" id="margin">Margin
+                            <div class="boxModel solid" id="border">Border
+                                <div class="boxModel solid">Padding
+                                    <div class="boxModel" >
+                                        <span id="contents">Contents</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>border:</div>
+                    <div>padding:</div>
+                    <div>margin:</div>
+                    <div>background-color:</div>
+                    <div>border-style:</div>
+                    <div>border-color:</div>
+                </div>
+                <div class="slide">
+                    <p>Content goes here.</p>
+                    <p>Content3 goes here.</p>
+                </div>
+                <div class="slide">
+                    <p>Content goes here.</p>
+                    <p>Content3 goes here.</p>
+                </div>
+            </section>
         </section>
-        <section aria-label="Main content" role="main">
-            <div class="slide">
-                <p>Content goes here.</p>
-            </div>
-            <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content2 goes here.</p>
-            </div>
-            <div class="slide">
-                <p>Content goes here.</p>
-                <p>Content3 goes here.</p>
-            </div>
-        </section>
-        </div>
     </div>
 </body>
 </html>

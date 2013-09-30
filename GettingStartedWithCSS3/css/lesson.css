@@ -5,22 +5,35 @@
     height:auto;
 }
     .lesson section[role=navigation] {
-        background-color: rgba(79, 171, 237, .2);
+        /*background-color: rgba(79, 171, 237, .2);*/
         height:100%;
         width:100%;
-        text-align:center;
+        
         -ms-grid-column: 1;
         display:-ms-flexbox;
         -ms-flex-direction:column;
-        -ms-flex-align:center;
         -ms-flex-pack:distribute;
     }
-        .lesson section[role=navigation] * {
-            margin: 5px;
+        .lesson section[role=navigation] div {            
+            width: 100%;
+            -ms-flex: 1 0 auto;
             max-width:100%;
-            color:yellow; 
-            
+            box-sizing:border-box;
+            font-size:x-large;
+            color:yellow;
+            -ms-flex-align:center;
+            border:solid;
+            border-color:transparent;
         }
+
+            .lesson section[role=navigation] div h3 {
+                width: 300px;
+                min-height: 100px;
+                display: table-cell;
+                vertical-align:middle;
+                text-align:center;
+            }
+
     .lesson section[role=document] {
         -ms-grid-column: 2;
         height:auto;
@@ -41,17 +54,33 @@
         overflow-y:auto;
     }
         .lesson section[role=document] div#slideDisplay > div:not(.swiper) {
-            display:list-item;
+            
             font-size:xx-large;
-            margin:5px;
+            margin:20px;
             margin-left:35px;
         }
 
             .lesson section[role=document] div#slideDisplay div:not(.swiper) div {
-                margin-left:26px;
+                display:list-item;
+                list-style:square;
+                margin:20px;
+                margin-left:35px;
                 font-size:x-large;
+                font-weight:normal;
+                color:white;
             }
 
+                .lesson section[role=document] div#slideDisplay div:not(.swiper) div.numberList {
+                    list-style: decimal;
+                }
+
+                .lesson section[role=document] div#slideDisplay div:not(.swiper) .bold {
+                    font-weight:bold;
+                }
+
+                .lesson section[role=document] div#slideDisplay div:not(.swiper) .color {
+                    color:yellow;
+                }
 
     /*Swipers*/
     .lesson section[role=document] div#slideDisplay .swiper {

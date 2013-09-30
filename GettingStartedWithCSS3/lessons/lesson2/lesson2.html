@@ -19,25 +19,50 @@
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
             <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Welcome to lesson2</span>
+                <span class="pagetitle">Understanding selectors, specificity, and cascading</span>
             </h1>
         </header>
         <section aria-label="Main content" role="main" class="lesson">
             <section class="navBar" role="navigation">
-                <h3 id="0">Selectors</h3>
-                <h3 data-demopage="../../demos/selectors/selectors.html" id="3">Demo</h3>
-                <h3 id="1">Browser Styles</h3>
-                <h3 id="2">Cascading</h3>
-                <h3 id="3">Review</h3>
+                <div data-demopage="../../demos/selectors/selectors.html">Selectors Demo</div>
+                <div id="0">Cascading</div>
+                <div id="1" style="font-size:large;">Inheritance</div>
+                <div id="2">Review</div>
             </section>
             <section aria-label="Main content" role="document">
                 <div id="slideDisplay"></div>
                 <div class="slide">
-                    <p>Content goes here.</p>
+                    <div class="numberList">Order of Precedence
+                        <div class="numberList bold color">Important
+                            <div>font-size: 32px !important;</div>
+                        </div>
+                        <div class="numberList bold color">Specificity
+                            <div>The most specific selector will win</div>
+                            <div>Calculate and concatenate
+                                <div><span class="bold">a </span>&nbsp;Number of id attributes</div>
+                                <div><span class="bold">b </span>&nbsp;Number of classes, attributes, and pseudo classes</div>
+                                <div><span class="bold">c </span>&nbsp;Number of element names</div>
+                            </div>
+                        </div>
+                        <div class="numberList bold color">Textual Order
+                            <div class="numberList">Browser's built-in css</div>
+                            <div class="numberList">User's normal declarations in user css</div>
+                            <div class="numberList">Author's normal declarations in author css
+                                <div class="numberList">External css</div>
+                                <div class="numberList">Embedded style</div>
+                                <div class="numberList">Inline style</div>
+                            </div>
+                            <div class="numberList">Author's important declarations in author css</div>
+                            <div class="numberList">User's important declarations in user css</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="slide">
-                    <p>Content goes here.</p>
-                    <p>Content2 goes here.</p>
+                    <div>Inheritance
+                        <div>Element inherits style from its parent</div>
+                        <div>The child can define its own style</div>
+                        <div>Can give an attribute the value <i>inherit</i></div>
+                    </div>
                 </div>
                 <div class="slide">
                     <p>Content goes here.</p>

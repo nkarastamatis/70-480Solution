@@ -21,7 +21,8 @@
             max-width:100%;
             box-sizing:border-box;
             font-size:x-large;
-            border-radius: 10px;
+            border-bottom-left-radius:20px;
+            border-top-left-radius:20px;
             background-color:lightblue;
             color:black;
             -ms-flex-align:center;
@@ -63,7 +64,7 @@
             margin-left:35px;
         }
 
-            .lesson section[role=document] div#slideDisplay div:not(.swiper) div {
+            .lesson section[role=document] div#slideDisplay > div:not(.swiper):not(.review) div {
                 display:list-item;
                 list-style:square;
                 margin:20px;
@@ -85,8 +86,30 @@
                     color:yellow;
                 }
 
+        .lesson section[role=document] div#slideDisplay div.review > div {
+            display:list-item;
+            list-style:decimal;
+            margin-top:40px;
+        }
+            .lesson section[role=document] div#slideDisplay div.review > div > div {
+                margin-left:35px;
+                display: list-item;
+                list-style: upper-alpha;
+                font-weight:bold;
+                margin-top: 20px;
+            }
+                .lesson section[role=document] div#slideDisplay div.review > div > div > span {
+                    font-weight: normal;
+                    display:inline;
+                    transition:2s;
+                }
+
+                .lesson section[role=document] div#slideDisplay div.review > div > div.correct span:hover {
+                    color: green;
+                }
+
     /*Swipers*/
-    .lesson section[role=document] div#slideDisplay .swiper {
+    .lesson section[role=document] div#slideDisplay > .swiper {
         width:auto; /*takes into account the margin set below, fits the rest*/
         display: -ms-flexbox;
         -ms-scroll-snap-x: mandatory snapInterval(0%, 85%);
@@ -95,7 +118,7 @@
         
     }
 
-    .lesson section[role=document] div#slideDisplay .swiper > * {
+    .lesson section[role=document] div#slideDisplay > .swiper > * {
         box-sizing: border-box;
         border:groove;
         border-color:whitesmoke;
@@ -106,7 +129,7 @@
         -ms-flex-wrap:wrap;
         overflow-y:auto;
     }
-
-        .lesson section[role=document] div#slideDisplay .swiper > * > h2 {
+     
+        .lesson section[role=document] div#slideDisplay > .swiper > * > h2 {
             margin-bottom: 20px;
         }

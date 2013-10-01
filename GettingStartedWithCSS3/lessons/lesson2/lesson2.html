@@ -65,7 +65,89 @@
                     </div>
                 </div>
                 <div class="slide">
-                    
+                    <div class="review">
+                        <div>You want to add a comment to your style sheet that says "temporary." Which is the proper line to add to the CSS file?
+                            <div><span>//temporary</span></div>
+                            <div><span>--temporary</span></div>
+                            <div class="correct"><span>/*temporary*/</span></div>
+                            <div><span>rem temporary</span></div>
+                        </div>
+                        <div>You want to maintain separation between structure and presentation. How do you create your style rules?
+                            <div><span>Use inline styles.</span></div>
+                            <div><span>Use embedded styles</span></div>
+                            <div class="correct"><span>Use external style sheets.</span></div>
+                            <div><span>In the HTML document, specify @import to load style sheets.</span></div>
+                        </div>
+                        <div>You want your printer.css style sheet to target printers. How would you set up the style sheet line?
+                            <div><span>&lt;link rel=’printer’ type=’text/css’ href=’Content/printer.css’ /&gt;</span></div>
+                            <div class="correct"><span>&lt;link rel=’stylesheet’ type=’text/css’ href=’Content/printer.css’ media=’print’ /&gt;</span></div>
+                            <div><span>&lt;link rel=’stylesheet’ type=’text/css’ href=’Content/printer.css’ /&gt; </span></div>
+                            <div><span>&lt;link rel=’stylesheet’ type=’text/css’ href=’Content/printer.css’ target=’print’ /&gt;</span></div>
+                        </div>
+                        <div>You want to set the style of the first letter of every paragraph in a &lt;div&gt; element whose id is readingPane. Which style selector is most appropriate?
+                            <div class="correct"><span>#readingPane p::first-letter</span></div>
+                            <div><span>#readingPane::first-letter </span></div>
+                            <div><span>#readingPane p:first-child </span></div>
+                            <div><span>#readingPane:first-child</span></div>
+                        </div>
+                        <div>The following style sheet rule is defined in Corporate.css.
+                            <pre class="code">
+div p.highlight{
+     font-size: xx-large;
+     background-color: yellow; 
+}
+</pre>
+In Department.css, the following style sheet rule is defined.
+<pre class="code">
+div p {     
+      background-color: blue; 
+}
+    </pre>
+
+Your HTML document contains the following.
+<pre class="code">
+&lt;!DOCTYPE html&gt; 
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt; 
+&lt;head&gt;
+     &lt;title&gt;&lt;/title&gt;
+     &lt;link href="Corporate.css" rel="stylesheet" /&gt;
+     &lt;link href="Department.css" rel="stylesheet" /&gt;
+&lt;/head&gt; 
+&lt;body&gt;
+     &lt;div id="readingPane"&gt;
+         &lt;p class='highlight'&gt;
+             Here is a test to see what the background color of a paragraph
+             will be blue or yellow.
+         &lt;/p&gt;
+     &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                            </pre>What will be the rendered background color of the paragraph?
+                            <div class="correct"><span>Yellow</span></div>
+                            <div><span>Blue</span></div>
+                            <div><span>Transparent</span></div>
+                            <div><span>White</span></div>
+                        </div>
+                        <div>The following style sheet rule is defined in Corporate.css.
+                            <pre class="code">
+div p.highlight{
+     font-size: xx-large;
+     background-color: yellow; 
+}
+</pre>
+In Department.css, the following style sheet rule is defined.
+<pre class="code">
+div p:first-of-type {     
+      background-color: blue; 
+}
+    </pre>
+                            What will be the rendered background color of the paragraph?
+                            <div><span>Yellow</span></div>
+                            <div class="correct"><span>Blue</span></div>
+                            <div><span>Transparent</span></div>
+                            <div><span>White</span></div>
+                         </div>
+                    </div>
                 </div>
                 <div class="slide">Blank on purpose</div>
             </section>

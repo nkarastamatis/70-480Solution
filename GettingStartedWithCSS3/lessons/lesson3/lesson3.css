@@ -10,6 +10,10 @@
     -ms-flex-align: center;
 }
 
+.lesson3 .code {
+    font-size: x-large;
+}
+
 .lesson3 section[role=document] div#slideDisplay #boxModel .boxModel {
     margin-left: 32px;
     margin-right: 32px;

@@ -1,9 +1,13 @@
 ﻿.grid {
-    font-size: xx-large;
+    font-size: x-large;
 }
 
 /* Simple */
-.grid #simple > div.msgrid { display: -ms-grid; -ms-grid-columns: 250px 250px; -ms-grid-rows: 250px 250px; }
+.grid #simple > div.msgrid { 
+    display: -ms-grid; 
+    -ms-grid-columns: 250px 250px; 
+    -ms-grid-rows: 250px 250px; 
+}
 .grid #simple > div.msgrid > div { border: 1px solid gray; }
 .grid #simple > div.msgrid > div:nth-child(2) { -ms-grid-column: 2; -ms-grid-row: 1; }
 .grid #simple > div.msgrid > div:nth-child(3) { -ms-grid-row: 2; }

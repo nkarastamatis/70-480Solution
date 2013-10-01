@@ -32,6 +32,7 @@
                 <div id="4">Layout (old)</div>
                 <div data-demopage="../../demos/flexbox/flexbox.html">Flexbox</div>
                 <div data-demopage="../../demos/grid/grid.html">Grid</div>
+                <div id="5">Review</div>
             </section>
             <section aria-label="Main content" role="document">
                 <div id="slideDisplay"></div>
@@ -51,7 +52,13 @@
                     </div>
                 </div>
                 <div class="slide">
-                    <div>font-family property</div>
+                    <div>font-family property
+                        <div>serif</div>
+                        <div>sans serif</div>
+                        <div>monospace</div>
+                        <div>cursive</div>
+                        <div>fantasy</div>
+                    </div>
                     <div>font-size property</div>
                 </div>
                 <div class="slide">
@@ -91,21 +98,57 @@
                 <div class="slide">
                     <div>position: static | relative | absolute | fixed
                         <div>used in conjunction with top, right, bottom, left</div>
+                        <div>static
+                            <div>Normal behavior. The top, right, bottom, and left properties do not apply.</div>
+                        </div>
+                        <div>relative
+                            <div>Lay out all elements as though the element were not positioned, and then adjust the element's position.</div>
+                        </div>
+                        <div>absolute
+                            <div>Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor or to the containing block.</div>
+                        </div>
+                        <div>fixed
+                            <div>Do not leave space for the element. Instead, position it at a specified position relative to the screen's viewport and doesn't move when scrolled. </div>
+                        </div>
                     </div>
-                    <div>static
-                        <div>Normal behavior. The top, right, bottom, and left properties do not apply.</div>
+                    <div>float: left | right | none</div>
+                    <div>clear: left | right | both | none</div>
+                    <div>box-sizing: content-box | border-box | padding-box
+                        <div>determines the reference point for calculating width</div>
                     </div>
-                    <div>relative
-                        <div>Lay out all elements as though the element were not positioned, and then adjust the element's position.</div>
-                    </div>
-                    <div>absolute
-                        <div>Do not leave space for the element. Instead, position it at a specified position relative to its closest positioned ancestor or to the containing block.</div>
-                    </div>
-                    <div>fixed
-                        <div>Do not leave space for the element. Instead, position it at a specified position relative to the screen's viewport and doesn't move when scrolled. </div>
+                    <div>Centering content in the browser
+                        <div><pre class="code">
+#container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+                        </pre></div>
                     </div>
                 </div>
-                
+                <div class="slide">
+                    <div class="review">
+                        <div>You want to find three shades of a color to use on parts of your webpage. Which color function helps you accomplish this task? 
+                            <div><span>rgb()</span></div>
+                            <div><span>rgba()</span></div>
+                            <div class="correct"><span>hsl()</span></div>
+                            <div><span>color()</span></div>
+                        </div>
+                        <div>A font that has curls at the top and bottom of its characters belongs to which font family group? 
+                            <div><span>monospace</span></div>
+                            <div class="correct"><span>serif</span></div>
+                            <div><span>sans serif</span></div>
+                            <div><span>cursive</span></div>
+                            <div><span>fantasy</span></div>
+                        </div>
+                        <div>You want to position a &lt;div&gt; element in relation to the browser window. Which position setting do you use? 
+                            <div><span>static</span></div>
+                            <div><span>relative</span></div>
+                            <div><span>absolute</span></div>
+                            <div class="correct"><span>fixed</span></div>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     </div>

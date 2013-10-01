@@ -1,5 +1,5 @@
 ﻿.flexbox {
-    font-size:xx-large;
+    font-size:x-large;
 }
 /* flexboxSimple */
 .flexbox #flexboxSimple {
@@ -27,8 +27,8 @@
 }
 
 .flexbox #flexxingFlexbox > div { min-width: 80px; min-height: 80px; border: 1px solid white; margin: 5px;}
-.flexbox #flexxingFlexbox > div:nth-child(1) { -ms-flex: 1 0 auto;}
-.flexbox #flexxingFlexbox > div:nth-child(2) { -ms-flex: 2 0 auto; }
+.flexbox #flexxingFlexbox > div:nth-child(1) { -ms-flex: 1 auto;}
+.flexbox #flexxingFlexbox > div:nth-child(2) { -ms-flex: 2 auto; }
 
 /* wrappingFlexbox */
 .flexbox #wrappingFlexbox {

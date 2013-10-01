@@ -39,8 +39,7 @@
     }
 
 /*Swipers*/
-.fragment section[role=main].swiper,
-.swiper {
+.fragment section[role=main].swiper {
     width:auto; /*takes into account the margin set below, fits the rest*/
     display: -ms-flexbox;
     -ms-scroll-snap-x: mandatory snapInterval(0%, 80%);
@@ -48,16 +47,15 @@
     margin-left: 120px;
 }
 
-.fragment section[role=main].swiper > *,
-.swiper > * {
+.fragment section[role=main].swiper > *{
     box-sizing: border-box;
     width: 80%;
     padding-right:80px;
     margin-bottom:16px; /* room for scrollbar */
+    overflow-y:hidden;
 }
 
-    .fragment section[role=main].swiper > * > h2,
-    .swiper > * > h2 {
+    .fragment section[role=main].swiper > * > h2 {
         margin-bottom: 20px;
     }
 
